@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de pag focada em Brasília</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@1,300&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="imagens/Brasão_do_Distrito_Federal_Brasil.png" alt="Brasão do DF"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SOBRE</a></li>
+                    <li><a href="">ENSINO</a></li>
+                    <li><a href="">LAZER</a></li>
+                    <li><a href="">ARQUITETURA</a></li>
+                    <li><a href="">CONTATO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+        </nav>
+
+    <div class="text-box">
+        <h1>Brasília - Um ótimo lugar para se conhecer</h1>
+        <p>"Brasília está situada no Planalto Central e surgiu após anos de questionamentos históricos e geográficos sobre a transferência de poder político do litoral para o interior do país, em algum ponto central."</p>
+        <a href="" class="hero-btn">Visite-nos para saber mais</a>
+    </div>
+
+    </section>
+
+    <section class="course">
+        <h1>Universidades de ensino</h1>
+        <p>Brasília tem ótimas insituições de Ensino, a mais famosa é a Universidade de Brasília(UNB)</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Instituto Federal de Brasília(IFB)</h3>
+                <p>O IFB tem diversos campos espalhados por brasília, contam com grades de curso bem interessante e tem como um dos objetivos o ensino técnico. </p>
+            </div>
+            <div class="course-col">
+                <h3>Universidade de Brasília(UNB)</h3>
+                <p>A UNB é um das Universidades mais bem conceituadas do centro-oesto, além da sua excelente avaliação pelo mec, destacam-se os campus, que contam com tecnologia de ponta</p>
+            </div>
+            <div class="course-col">
+                <h3>Centro Universitário de Brasília(UniCEUB)</h3>
+                <p>O Centro de Ensino Unificado de Brasília é uma prestigiada instituição de ensino superior particular brasileira, com sede em Brasília</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lazer">
+        <h1>Lazer em BSB</h1>
+        <p>Brasíla conta com diversas forma de lazer como esportes, lagos e passeios.</p>
+        
+        <div class="row">
+            <div class="lazer-col">
+                <img src="imagens/filhos-da-nacao.jpg" alt="criança no Lago Norte">
+                <div class="layer">
+                    <h3>Lago Sul</h3>
+                </div>
+            </div>
+            <div class="lazer-col">
+                <img src="imagens/parque-nacional-de-brasilia_capa.jpg" alt="criança no Lago Norte">
+                <div class="layer">
+                    <h3>Água Mineral</h3>
+                </div>
+            </div> 
+            <div class="lazer-col">
+                <img src="imagens/Itamaraty.jpg" alt="criança no Lago Norte">
+                <div class="layer">
+                    <h3>Itamaraty</h3>
+                </div>
+            </div>       
+        </div>
+    </section>
+
+
+    <section class="arqui">
+        <h1>Arquitetura de Brasília</h1>
+        <p>Brasília foi uma cidade projetada pelo arquiteto Oscar Niemeyer.<br> O arquiteto teve uma ideia de traços finos, concreto e vidros em suas obras e uma integração com a natureza.</p>
+
+        <div class="row">
+            <div class="arqui-col">
+                <img src="imagens/gustavo-leighton-WR0Eoitinok-unsplash.jpg" alt="Foto do Itamaraty">
+                <h3>Ministério das Relações Exteriores</h3>
+                <p>É um órgão do Poder Executivo, responsável pelo assessoramento do Presidente da República na formulação, no desempenho e no acompanhamento das relações do Brasil com outros países e organismos internacionais.</p>
+            </div>
+            <div class="arqui-col">
+                <img src="imagens/Senado_Federal_do_Brasil_Fotos_produzidas_pelo_Senado_(14921917038).jpg" alt="Foto do Senado">
+                <h3>Senado Federal</h3>
+                <p>O Senado Federal é a câmara alta do Congresso Nacional do Brasil e, ao lado da Câmara dos Deputados, faz parte do Poder Legislativo da União.</p>
+            </div>
+            <div class="arqui-col">
+                <img src="imagens/thandy-yung-vvVbR8QTCkA-unsplash.jpg" alt="Foto Ipê amarelo">
+                <h3>Os Ipês</h3>
+                <p>Brasília é muito conhecida por sua integração de arquitetura e urbanino com o ipê, ao longo da cidade pode-se notar diversas espécies.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+</html>
